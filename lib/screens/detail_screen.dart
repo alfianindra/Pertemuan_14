@@ -38,6 +38,7 @@ class _DetailScreenState extends ConsumerState<DetailScreen> {
                 setState(() {
                   // FIXME: The counter is not updated in the main screen
                   counterProv.resetCounter();
+                  ref.refresh(counterProvider);
                 });
               },
               child: const Text('Clear Data'),
